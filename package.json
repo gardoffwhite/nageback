@@ -2,13 +2,13 @@
   "name": "gacha-backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",    // คำสั่งที่ Render ใช้ในการเริ่มแอป
-    "dev": "nodemon index.js"    // ใช้สำหรับ dev mode (ไม่ใช่ใน Render)
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.0"  // ใช้สำหรับ dev mode
+    "nodemon": "^2.0.0"
   }
 }
