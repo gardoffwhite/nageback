@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(mongodb+srv://udgardlnw:Exosphere96*@cluster0.e2oljer.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/api/users', userRoutes);
 app.use('/api/items', itemRoutes);
