@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://yourMongoDBLink', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongodb+srv://udgardlnw:Exosphere96*@cluster0.e2oljer.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/api/users', userRoutes);
 app.use('/api/items', itemRoutes);
